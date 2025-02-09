@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav3{
+            background-color:rgb(167, 160, 197);
+        }
+        .nav3 ul{
+            list-style-type: none;
+            padding:0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 5px;
+        }
+        .nav3 a{
+            text-decoration: none;
+            color:white ;
+            display: block;
+        }
+        .nav3 .dropdown_content{
+            display: none;
+        }
+        .nav3 .dropdown{
+            position: relative;
+        }
+        .nav3 .dropdown:hover .dropdown_content{
+            display: block;
+            position: absolute;
+            background-color: #3b3b3b;
+            min-width: 150px;
+            padding-left: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 6px;
+            /* move the box a lil bit lower and right */
+            top: 24px;
+            left:10px;
+        }
+        .nav3 button{
+            background-color: white;
+            border: none;
+            border-radius: 3px;
+        }
+        .nav3 button:hover{
+            background:#3b3b3b;
+        }
+        .nav3 button:active{
+            background-color:#3b3b3b;
+            transform: scale(.90);
+        }
+    </style>
+</head>
+<body>
+    <h2>Variation 3: Horizontal with dropdown</h2>
+    
+    <nav class="nav3">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">About</a>
+                <div class="dropdown_content">
+                    <a href="#">Our Story</a>
+                    <a href="#">Team</a>
+                    <a href="#">Conatct</a>
+                </div>
+            </li>
+            <li><a href="#">Products</a></li>
+            <li><button>Login</button></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
